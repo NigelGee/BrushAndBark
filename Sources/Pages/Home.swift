@@ -60,27 +60,13 @@ struct Home: StaticPage {
         .frame(maxWidth: "90%")
         .margin(.bottom, .extraLarge)
 
-//        Group {
-//            Section {
-//                Image("/images/rug.jpg", description: "Luna laid as a rug.")
-//                    .resizable()
-//                    .frame(maxWidth: 500)
-//
-//                Text(placeholderLength: 100)
-//            }
-//        }
-//        .frame(maxWidth: "90%")
-//        .margin(.bottom, .large)
-
-
-
         Section {
             Card(imageName: "/images/rug.jpg") {
                 Text("Luna, Samoyed")
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .contentPosition(.overlay)
+            .contentPosition(.overlay(alignment: .bottomTrailing))
             .imageOpacity(0.7)
 
             Card(imageName: "/images/washing.jpg") {
@@ -88,7 +74,7 @@ struct Home: StaticPage {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .contentPosition(.overlay)
+            .contentPosition(.overlay(alignment: .bottomTrailing))
             .imageOpacity(0.7)
 
             Card(imageName: "/images/car.jpg") {
@@ -96,7 +82,7 @@ struct Home: StaticPage {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .contentPosition(.overlay)
+            .contentPosition(.overlay(alignment: .bottomTrailing))
             .imageOpacity(0.7)
 
             Card(imageName: "/images/dishwasher.jpg") {
@@ -104,7 +90,7 @@ struct Home: StaticPage {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .contentPosition(.overlay)
+            .contentPosition(.overlay(alignment: .bottomTrailing))
             .imageOpacity(0.7)
 
             Card(imageName: "/images/wind.jpg") {
@@ -112,7 +98,7 @@ struct Home: StaticPage {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .contentPosition(.overlay)
+            .contentPosition(.overlay(alignment: .bottomTrailing))
             .imageOpacity(0.7)
 
             Card(imageName: "/images/stack.jpg") {
@@ -120,7 +106,7 @@ struct Home: StaticPage {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
             }
-            .contentPosition(.overlay)
+            .contentPosition(.overlay(alignment: .bottomTrailing))
             .imageOpacity(0.7)
         }
         .columns(3)

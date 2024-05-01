@@ -11,8 +11,7 @@ import Ignite
 struct BlogPost: ContentPage {
     func body(content: Content, context: PublishingContext) async -> [any BlockElement] {
         Group {
-            Text(content.title)
-                .headerText
+            PagerHeader(title: content.title)
 
             Text("\(content.estimatedWordCount) words; \(content.estimatedReadingMinutes) minutes to read.")
 
