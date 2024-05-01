@@ -6,8 +6,7 @@ struct Videos: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {
-            Text("VIDEOS")
-                .headerText
+            PagerHeader(title: "VIDEOS")
 
             Text("Instructional videos for Dogs.")
                 .font(.lead)

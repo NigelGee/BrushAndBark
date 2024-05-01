@@ -10,8 +10,7 @@ struct Reviews: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {
-            Text("REVIEWS")
-                .headerText
+            PagerHeader(title: "REVIEWS")
 
             if let reviews = context.decode(resource: "reviews.json", as: [CustomerReview].self) {
                 Section {

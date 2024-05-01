@@ -6,8 +6,7 @@ struct Help: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {
-            Text("HELP")
-                .headerText
+            PagerHeader(title: "HELP")
 
             Accordion {
                 Item("What services do you offer at Brush & Bark?", startsOpen: true) {

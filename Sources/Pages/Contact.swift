@@ -6,8 +6,7 @@ struct Contact: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {
-            Text("CONTACT US")
-                .headerText
+            PagerHeader(title: "CONTACT US")
 
             Text("We're opening six days a week from 8am to 4pm, and although reservations are recommended you're always welcome to come on in with your pup!")
 

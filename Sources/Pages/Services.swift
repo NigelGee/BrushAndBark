@@ -6,8 +6,7 @@ struct Services: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {
-            Text("SERVICES")
-                .headerText
+            PagerHeader(title: "SERVICES")
 
             Table {
                 Row {

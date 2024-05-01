@@ -6,8 +6,7 @@ struct Blog: StaticPage {
 
     func body(context: PublishingContext) -> [BlockElement] {
         Group {
-            Text("OUR BLOG")
-                .headerText
+            PagerHeader(title: "OUR BLOG")
 
             Text("Each month we write a new blog post covering tips, techniques, and other advice for dog owners.")
                 .font(.lead)
