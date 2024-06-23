@@ -13,7 +13,7 @@ struct Home: StaticPage {
                 Text("We're Oxford's #1 dog grooming salon, and ready to leave you pawsitively happy!")
                     .font(.lead)
 
-                Link("Make a Booking", target: Contact())
+                Link("Make a Booking", target: "mailto:booking@brushandbark.com")
                     .linkStyle(.button)
             }
             .backgroundOpacity(0.6)
@@ -37,7 +37,7 @@ struct Home: StaticPage {
                 Text("We're here to make every pup look pupperific – brush up on cuteness today!")
                     .font(.lead)
 
-                Link("Email us", target: "mailto:name@brushandbark.com")
+                Link("Contact us", target: Contact())
                     .linkStyle(.button)
             }
             .backgroundOpacity(0.6)

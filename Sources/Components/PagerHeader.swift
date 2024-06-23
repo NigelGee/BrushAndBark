@@ -17,6 +17,4 @@ struct PagerHeader: Component {
             .fontWeight(.bold)
             .margin(.top, .large)
     }
-    
-
 }
